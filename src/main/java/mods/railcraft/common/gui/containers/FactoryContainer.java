@@ -51,10 +51,7 @@ public class FactoryContainer {
                     return new ContainerFluidLoader(inv, (TileFluidLoader) obj);
                 case UNLOADER_FLUID:
                     return new ContainerFluidUnloader(inv, (TileFluidUnloader) obj);
-                case LOADER_ENERGY:
-                    return new ContainerEnergyLoader(inv, (TileEnergyLoader) obj);
-                case UNLOADER_ENERGY:
-                    return new ContainerEnergyLoader(inv, (TileEnergyUnloader) obj);
+               
                 case LOADER_RF:
                     return new ContainerLoaderRF((TileRFLoaderBase) obj);
                 case UNLOADER_RF:
@@ -71,10 +68,6 @@ public class FactoryContainer {
                     return new ContainerDetectorLocomotive(inv, (TileDetector) obj);
                 case DETECTOR_ROUTING:
                     return new ContainerRouting(inv, (IRouter) ((TileDetector) obj).getDetector());
-                case CART_DISPENSER:
-                    return new ContainerDispenserCart(inv, (TileDispenserCart) obj);
-                case TRAIN_DISPENSER:
-                    return new ContainerDispenserTrain(inv, (TileDispenserTrain) obj);
                 case COKE_OVEN:
                     return new ContainerCokeOven(inv, (TileCokeOven) obj);
                 case BLAST_FURNACE:

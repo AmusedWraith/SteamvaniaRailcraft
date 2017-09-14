@@ -63,10 +63,6 @@ public class MachineTileRegistery {
         GameRegistry.registerTileEntity(TileSawmill.class, "RCSawmillTile");
 
         // Gamma
-        GameRegistry.registerTileEntity(TileDispenserCart.class, "RCMinecartDispenserTile");
-        GameRegistry.registerTileEntity(TileEnergyLoader.class, "RCLoaderTileEnergy");
-        GameRegistry.registerTileEntity(TileEnergyUnloader.class, "RCUnloaderTileEnergy");
-        GameRegistry.registerTileEntity(TileDispenserTrain.class, "RCTrainDispenserTile");
         GameRegistry.registerTileEntity(TileItemLoader.class, "RCLoaderTile");
         GameRegistry.registerTileEntity(TileItemLoaderAdvanced.class, "RCLoaderAdvancedTile");
         GameRegistry.registerTileEntity(TileItemUnloader.class, "RCUnloaderTile");

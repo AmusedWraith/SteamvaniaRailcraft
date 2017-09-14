@@ -40,10 +40,6 @@ public enum EnumMachineGamma implements IEnumMachine {
     ITEM_UNLOADER_ADVANCED(Module.TRANSPORT, "unloader.item.advanced", 0, TileItemUnloaderAdvanced.class),
     FLUID_LOADER(Module.TRANSPORT, "loader.liquid", 2, TileFluidLoader.class),
     FLUID_UNLOADER(Module.TRANSPORT, "unloader.liquid", 2, TileFluidUnloader.class),
-    ENERGY_LOADER(Module.IC2, "loader.energy", 0, TileEnergyLoader.class),
-    ENERGY_UNLOADER(Module.IC2, "unloader.energy", 0, TileEnergyUnloader.class),
-    DISPENSER_CART(Module.AUTOMATION, "dispenser.cart", 0, TileDispenserCart.class),
-    DISPENSER_TRAIN(Module.TRAIN, "dispenser.train", 0, TileDispenserTrain.class),
     RF_LOADER(Module.REDSTONE_FLUX, "loader.rf", -1, TileRFLoader.class),
     RF_UNLOADER(Module.REDSTONE_FLUX, "unloader.rf", -1, TileRFUnloader.class);
     private final Module module;
@@ -63,12 +59,10 @@ public enum EnumMachineGamma implements IEnumMachine {
         creativeList.add(ITEM_UNLOADER_ADVANCED);
         creativeList.add(FLUID_LOADER);
         creativeList.add(FLUID_UNLOADER);
-        creativeList.add(ENERGY_LOADER);
-        creativeList.add(ENERGY_UNLOADER);
+
         creativeList.add(RF_LOADER);
         creativeList.add(RF_UNLOADER);
-        creativeList.add(DISPENSER_CART);
-        creativeList.add(DISPENSER_TRAIN);
+
     }
 
     EnumMachineGamma(Module module, String tag, int extraIcons, Class<? extends TileMachineBase> tile) {

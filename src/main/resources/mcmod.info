@@ -1,8 +1,8 @@
 {
   "modListVersion": 2,
   "modList": [{
-    "modid": "Railcraft",
-    "name": "Railcraft",
+    "modid": "SteamvaniaRailcraft",
+    "name": "SteamvaniaRailcraft",
     "description": "Redefine your rails",
     "version": "${version}",
     "mcversion": "${mcversion}",

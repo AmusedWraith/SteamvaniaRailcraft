@@ -131,12 +131,7 @@ public class ModuleAutomation extends RailcraftModule {
                     'P', Blocks.stone_pressure_plate);
         }
 
-        EnumMachineGamma gamma = EnumMachineGamma.DISPENSER_CART;
-        if (gamma.register())
-            CraftingPlugin.addShapedRecipe(gamma.getItem(),
-                    "ML",
-                    'M', Items.minecart,
-                    'L', Blocks.dispenser);
+       
 
         EnumMachineAlpha alpha = EnumMachineAlpha.FEED_STATION;
         if (alpha.register()) {

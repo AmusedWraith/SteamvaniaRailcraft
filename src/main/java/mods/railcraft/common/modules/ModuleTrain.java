@@ -45,23 +45,9 @@ public class ModuleTrain extends RailcraftModule {
                 'P', Blocks.stone_pressure_plate,});
         }
 
-        EnumMachineGamma.DISPENSER_TRAIN.register();
+       
     }
 
-    @Override
-    public void initSecond() {
-        EnumMachineGamma type = EnumMachineGamma.DISPENSER_TRAIN;
-        if (type.isAvaliable() && EnumMachineGamma.DISPENSER_CART.isAvaliable()) {
-            ItemStack crowbar = ItemCrowbar.getItem();
-            crowbar.setItemDamage(-1);
-            CraftingPlugin.addShapedRecipe(type.getItem(),
-                    "rcr",
-                    "cdc",
-                    "rcr",
-                    'd', EnumMachineGamma.DISPENSER_CART.getItem(),
-                    'c', crowbar,
-                    'r', "dustRedstone");
-        }
-    }
+    
 
 }

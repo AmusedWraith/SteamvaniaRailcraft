@@ -27,7 +27,7 @@ targetCompatibility = 1.7
 
 
 group = "mods.railcraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Railcraft_" + project.mcversion
+archivesBaseName = "SteamvaniaRailcraft_" + project.mcversion
 
 ext.apiRailcraft = "./api/railcraft"
 ext.apiThaumcraft = "./api/thaumcraft"

@@ -56,10 +56,7 @@ public class FactoryGui {
                     return new GuiLoaderFluid(inv, (TileFluidLoader) obj);
                 case UNLOADER_FLUID:
                     return new GuiUnloaderFluid(inv, (TileFluidUnloader) obj);
-                case LOADER_ENERGY:
-                    return new GuiLoaderEnergy(inv, (TileEnergyLoader) obj);
-                case UNLOADER_ENERGY:
-                    return new GuiUnloaderEnergy(inv, (TileEnergyUnloader) obj);
+                
                 case LOADER_RF:
                     return new GuiLoaderRF((TileRFLoader) obj);
                 case UNLOADER_RF:
@@ -82,10 +79,7 @@ public class FactoryGui {
                     return new GuiDetectorLocomotive(inv, (TileDetector) obj);
                 case DETECTOR_ROUTING:
                     return new GuiRouting(inv, (RailcraftTileEntity) obj, (IRouter) ((TileDetector) obj).getDetector());
-                case CART_DISPENSER:
-                    return new GuiDispenserCart(inv, (TileDispenserCart) obj);
-                case TRAIN_DISPENSER:
-                    return new GuiDispenserTrain(inv, (TileDispenserTrain) obj);
+                
                 case COKE_OVEN:
                     return new GuiCokeOven(inv, (TileCokeOven) obj);
                 case BLAST_FURNACE:
