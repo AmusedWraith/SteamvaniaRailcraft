@@ -88,17 +88,7 @@ public abstract class TileTankBase extends TileMultiBlock implements ITankTile {
         }
     }
 
-    public static void placeSteelTank(World world, int x, int y, int z, int patternIndex, FluidStack fluid) {
-        MultiBlockPattern pattern = TileTankBase.patterns.get(patternIndex);
-        Map<Character, Integer> blockMapping = new HashMap<Character, Integer>();
-        blockMapping.put('B', EnumMachineBeta.TANK_STEEL_WALL.ordinal());
-        blockMapping.put('W', EnumMachineBeta.TANK_STEEL_GAUGE.ordinal());
-        TileEntity tile = pattern.placeStructure(world, x, y, z, RailcraftBlocks.getBlockMachineBeta(), blockMapping);
-        if (tile instanceof TileTankBase) {
-            TileTankBase master = (TileTankBase) tile;
-            master.tank.setFluid(fluid);
-        }
-    }
+   
 
     private static List<MultiBlockPattern> buildPatterns() {
         List<MultiBlockPattern> pats = new ArrayList<MultiBlockPattern>();

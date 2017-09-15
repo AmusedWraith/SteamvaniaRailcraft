@@ -55,9 +55,6 @@ public class MachineTileRegistery {
         GameRegistry.registerTileEntity(TileTankIronWall.class, "RCIronTankWallTile");
         GameRegistry.registerTileEntity(TileTankIronGauge.class, "RCIronTankGaugeTile");
         GameRegistry.registerTileEntity(TileTankIronValve.class, "RCIronTankValveTile");
-        GameRegistry.registerTileEntity(TileTankSteelWall.class, "RCSteelTankWallTile");
-        GameRegistry.registerTileEntity(TileTankSteelGauge.class, "RCSteelTankGaugeTile");
-        GameRegistry.registerTileEntity(TileTankSteelValve.class, "RCSteelTankValveTile");
         GameRegistry.registerTileEntity(TileChestVoid.class, "RCVoidChestTile");
         GameRegistry.registerTileEntity(TileChestMetals.class, "RCMetalsChestTile");
         GameRegistry.registerTileEntity(TileSawmill.class, "RCSawmillTile");

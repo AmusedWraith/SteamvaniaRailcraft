@@ -54,7 +54,7 @@ public class ModuleTransport extends RailcraftModule {
                     'W', "plankWood");
 
         initIronTank();
-        initSteelTank();
+
 
         EnumMachineBeta voidChest = EnumMachineBeta.VOID_CHEST;
         if (voidChest.register())
@@ -248,26 +248,5 @@ public class ModuleTransport extends RailcraftModule {
                 'G', new ItemStack(Blocks.iron_bars));
     }
 
-    private void initSteelTank() {
-        defineTank(EnumMachineBeta.TANK_STEEL_WALL,
-                "PP",
-                "PP",
-                'P', RailcraftItem.plate.getRecipeObject(EnumPlate.STEEL));
-
-        defineTank(EnumMachineBeta.TANK_STEEL_GAUGE,
-                "GPG",
-                "PGP",
-                "GPG",
-                'P', RailcraftItem.plate.getRecipeObject(EnumPlate.STEEL),
-                'G', "paneGlassColorless");
-
-        defineTank(EnumMachineBeta.TANK_STEEL_VALVE,
-                "GPG",
-                "PLP",
-                "GPG",
-                'P', RailcraftItem.plate.getRecipeObject(EnumPlate.STEEL),
-                'L', new ItemStack(Blocks.lever),
-                'G', new ItemStack(Blocks.iron_bars));
-    }
 
 }

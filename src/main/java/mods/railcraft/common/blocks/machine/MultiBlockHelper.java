@@ -65,10 +65,7 @@ public class MultiBlockHelper implements StructureHelper {
         TileTankBase.placeIronTank(world, x, y, z, patternIndex, fluid);
     }
 
-    @Override
-    public void placeSteelTank(World world, int x, int y, int z, int patternIndex, FluidStack fluid) {
-        TileTankBase.placeSteelTank(world, x, y, z, patternIndex, fluid);
-    }
+
 
     @Override
     public void placeFluxTransformer(World world, int x, int y, int z) {

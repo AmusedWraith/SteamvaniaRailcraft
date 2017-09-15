@@ -126,9 +126,6 @@ public class RailcraftBlocks {
             lightOpacity[EnumMachineBeta.TANK_IRON_WALL.ordinal()] = 0;
             lightOpacity[EnumMachineBeta.TANK_IRON_VALVE.ordinal()] = 0;
             lightOpacity[EnumMachineBeta.TANK_IRON_GAUGE.ordinal()] = 0;
-            lightOpacity[EnumMachineBeta.TANK_STEEL_WALL.ordinal()] = 0;
-            lightOpacity[EnumMachineBeta.TANK_STEEL_VALVE.ordinal()] = 0;
-            lightOpacity[EnumMachineBeta.TANK_STEEL_GAUGE.ordinal()] = 0;
             lightOpacity[EnumMachineBeta.BOILER_TANK_LOW_PRESSURE.ordinal()] = 0;
             lightOpacity[EnumMachineBeta.BOILER_TANK_HIGH_PRESSURE.ordinal()] = 0;
             lightOpacity[EnumMachineBeta.SENTINEL.ordinal()] = 0;

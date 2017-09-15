@@ -195,8 +195,6 @@ public class ModuleSteam extends RailcraftModule {
         ItemStack tank;
         if (EnumMachineBeta.BOILER_TANK_HIGH_PRESSURE.isAvaliable())
             tank = EnumMachineBeta.BOILER_TANK_HIGH_PRESSURE.getItem();
-        else if (EnumMachineBeta.TANK_STEEL_WALL.isAvaliable())
-            tank = EnumMachineBeta.TANK_STEEL_WALL.getItem();
         else
             tank = RailcraftItem.plate.getStack(1, EnumPlate.STEEL);
         if (tank == null)

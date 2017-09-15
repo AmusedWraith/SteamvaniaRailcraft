@@ -43,9 +43,6 @@ import mods.railcraft.common.blocks.machine.beta.TileEngineSteamLow;
 import mods.railcraft.common.blocks.machine.beta.TileTankIronGauge;
 import mods.railcraft.common.blocks.machine.beta.TileTankIronValve;
 import mods.railcraft.common.blocks.machine.beta.TileTankIronWall;
-import mods.railcraft.common.blocks.machine.beta.TileTankSteelGauge;
-import mods.railcraft.common.blocks.machine.beta.TileTankSteelValve;
-import mods.railcraft.common.blocks.machine.beta.TileTankSteelWall;
 import mods.railcraft.common.blocks.machine.delta.TileCage;
 import mods.railcraft.common.blocks.machine.gamma.TileFluidLoader;
 import mods.railcraft.common.blocks.machine.gamma.TileFluidUnloader;
@@ -140,11 +137,7 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileTankIronWall.class, new RenderIronTank());
         ClientRegistry.bindTileEntitySpecialRenderer(TileTankIronValve.class, new RenderIronTank());
 
-        ClientRegistry.bindTileEntitySpecialRenderer(TileTankSteelGauge.class, new RenderIronTank());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileTankSteelWall.class, new RenderIronTank());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileTankSteelValve.class, new RenderIronTank());
-
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEngineSteamHobby.class, RenderPneumaticEngine.renderHobby);
+         ClientRegistry.bindTileEntitySpecialRenderer(TileEngineSteamHobby.class, RenderPneumaticEngine.renderHobby);
         ClientRegistry.bindTileEntitySpecialRenderer(TileEngineSteamLow.class, RenderPneumaticEngine.renderLow);
         ClientRegistry.bindTileEntitySpecialRenderer(TileEngineSteamHigh.class, RenderPneumaticEngine.renderHigh);
 

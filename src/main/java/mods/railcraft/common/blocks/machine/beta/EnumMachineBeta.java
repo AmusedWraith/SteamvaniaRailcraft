@@ -45,10 +45,7 @@ public enum EnumMachineBeta implements IEnumMachine {
     ENGINE_STEAM_HIGH(Module.STEAM, "engine.steam.high", TileEngineSteamHigh.class, 1, 1, 0),
     SENTINEL(Module.CHUNK_LOADING, "anchor.sentinel", TileSentinel.class, 2, 1, 0, 0, 1, 1, 1, 1),
     VOID_CHEST(Module.TRANSPORT, "chest.void", TileChestVoid.class, 1, 1, 0),
-    METALS_CHEST(Module.TRANSPORT, "chest.metals", TileChestMetals.class, 1, 1, 0),
-    TANK_STEEL_WALL(Module.TRANSPORT, "tank.steel.wall", TileTankSteelWall.class, 2, 1, 0, 0, 1, 1, 1, 1),
-    TANK_STEEL_GAUGE(Module.TRANSPORT, "tank.steel.gauge", TileTankSteelGauge.class, 1, 5, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4),
-    TANK_STEEL_VALVE(Module.TRANSPORT, "tank.steel.valve", TileTankSteelValve.class, 4, 1, 0, 0, 1, 1, 1, 1, 2, 3);
+    METALS_CHEST(Module.TRANSPORT, "chest.metals", TileChestMetals.class, 1, 1, 0);
     private final Module module;
     private final String tag;
     private final Class<? extends TileMachineBase> tile;
@@ -62,9 +59,7 @@ public enum EnumMachineBeta implements IEnumMachine {
         creativeList.add(TANK_IRON_WALL);
         creativeList.add(TANK_IRON_GAUGE);
         creativeList.add(TANK_IRON_VALVE);
-        creativeList.add(TANK_STEEL_WALL);
-        creativeList.add(TANK_STEEL_GAUGE);
-        creativeList.add(TANK_STEEL_VALVE);
+
         creativeList.add(BOILER_FIREBOX_SOLID);
         creativeList.add(BOILER_FIREBOX_FLUID);
         creativeList.add(BOILER_TANK_LOW_PRESSURE);

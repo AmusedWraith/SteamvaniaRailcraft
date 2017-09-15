@@ -184,10 +184,7 @@ public class ThaumcraftPlugin {
             addItemAspect(EnumMachineBeta.TANK_IRON_GAUGE.getItem(), ironTankAspects);
             addItemAspect(EnumMachineBeta.TANK_IRON_VALVE.getItem(), ironTankAspects);
             addItemAspect(EnumMachineBeta.TANK_IRON_WALL.getItem(), ironTankAspects);
-            addItemAspect(EnumMachineBeta.TANK_STEEL_GAUGE.getItem(), ironTankAspects);
-            addItemAspect(EnumMachineBeta.TANK_STEEL_VALVE.getItem(), ironTankAspects);
-            addItemAspect(EnumMachineBeta.TANK_STEEL_WALL.getItem(), ironTankAspects);
-
+         
             AspectList detectorAspects = new AspectList().add(Aspect.SENSES, 4).add(Aspect.MECHANISM, 4);
             for (EnumDetector detector : EnumDetector.VALUES) {
                 addItemAspect(detector.getItem(), detectorAspects);
