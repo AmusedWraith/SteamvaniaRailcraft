@@ -33,7 +33,7 @@ public class MachineTileRegistery {
         GameRegistry.registerTileEntity(TileTradeStation.class, "RCTradeStationTile");
         GameRegistry.registerTileEntity(TileSteamTurbine.class, "RCSteamTurbineTile");
         GameRegistry.registerTileEntity(TileBlastFurnace.class, "RCBlastFurnaceTile");
-        GameRegistry.registerTileEntity(TileCokeOven.class, "RCCokeOvenTile");
+       
         GameRegistry.registerTileEntity(TileRockCrusher.class, "RCRockCrusherTile");
         GameRegistry.registerTileEntity(TileRollingMachine.class, "RCRollingMachineTile");
         GameRegistry.registerTileEntity(TileTankWater.class, "RCWaterTankTile");

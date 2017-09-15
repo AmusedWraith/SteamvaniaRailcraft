@@ -41,11 +41,6 @@ public class MultiBlockHelper implements StructureHelper {
     }
 
     @Override
-    public void placeCokeOven(World world, int x, int y, int z, int creosote, ItemStack input, ItemStack output) {
-        TileCokeOven.placeCokeOven(world, x, y, z, creosote, input, output);
-    }
-
-    @Override
     public void placeBlastFurnace(World world, int x, int y, int z, ItemStack input, ItemStack output, ItemStack fuel) {
         TileBlastFurnace.placeBlastFurnace(world, x, y, z, input, output, fuel);
     }

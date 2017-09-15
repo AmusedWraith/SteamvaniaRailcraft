@@ -68,8 +68,7 @@ public class FactoryContainer {
                     return new ContainerDetectorLocomotive(inv, (TileDetector) obj);
                 case DETECTOR_ROUTING:
                     return new ContainerRouting(inv, (IRouter) ((TileDetector) obj).getDetector());
-                case COKE_OVEN:
-                    return new ContainerCokeOven(inv, (TileCokeOven) obj);
+               
                 case BLAST_FURNACE:
                     return new ContainerBlastFurnace(inv, (TileBlastFurnace) obj);
                 case STEAN_OVEN:

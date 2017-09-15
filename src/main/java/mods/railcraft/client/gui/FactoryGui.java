@@ -79,9 +79,6 @@ public class FactoryGui {
                     return new GuiDetectorLocomotive(inv, (TileDetector) obj);
                 case DETECTOR_ROUTING:
                     return new GuiRouting(inv, (RailcraftTileEntity) obj, (IRouter) ((TileDetector) obj).getDetector());
-                
-                case COKE_OVEN:
-                    return new GuiCokeOven(inv, (TileCokeOven) obj);
                 case BLAST_FURNACE:
                     return new GuiBlastFurnace(inv, (TileBlastFurnace) obj);
                 case STEAN_OVEN:

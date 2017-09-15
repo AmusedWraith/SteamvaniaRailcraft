@@ -64,21 +64,8 @@ public class ModuleFactory extends RailcraftModule {
                     'B', "blockSteel",
                     'I', "ingotSteel");
 
-        EnumMachineAlpha alpha = EnumMachineAlpha.COKE_OVEN;
-        if (alpha.register()) {
-            ItemStack stack = alpha.getItem();
-            CraftingPlugin.addShapedRecipe(stack,
-                    "MBM",
-                    "BMB",
-                    "MBM",
-                    'B', "ingotBrick",
-                    'M', "sand");
 
-            if (RailcraftToolItems.getCoalCoke() != null)
-                RailcraftCraftingManager.cokeOven.addRecipe(new ItemStack(Items.coal, 1, 0), true, false, RailcraftToolItems.getCoalCoke(), Fluids.CREOSOTE.get(COKE_COOK_CREOSOTE), COKE_COOK_TIME);
-        }
-
-        alpha = EnumMachineAlpha.STEAM_OVEN;
+        EnumMachineAlpha alpha = EnumMachineAlpha.STEAM_OVEN;
         if (alpha.register())
             CraftingPlugin.addShapedRecipe(alpha.getItem(4),
                     "SSS",
@@ -164,16 +151,6 @@ public class ModuleFactory extends RailcraftModule {
                 recipe.addOutput(RailcraftItem.dust.getStack(ItemDust.EnumDust.OBSIDIAN), 0.25f);
             }
 
-            if (EnumMachineAlpha.COKE_OVEN.isEnabled()) {
-                recipe = RailcraftCraftingManager.rockCrusher.createNewRecipe(EnumMachineAlpha.COKE_OVEN.getItem(), true, false);
-                recipe.addOutput(new ItemStack(Items.brick, 3), 1.0f);
-                recipe.addOutput(new ItemStack(Items.brick), 0.5f);
-                recipe.addOutput(new ItemStack(Blocks.sand), 0.25f);
-                recipe.addOutput(new ItemStack(Blocks.sand), 0.25f);
-                recipe.addOutput(new ItemStack(Blocks.sand), 0.25f);
-                recipe.addOutput(new ItemStack(Blocks.sand), 0.25f);
-                recipe.addOutput(new ItemStack(Blocks.sand), 0.25f);
-            }
 
             if (EnumMachineAlpha.BLAST_FURNACE.isEnabled()) {
                 recipe = RailcraftCraftingManager.rockCrusher.createNewRecipe(EnumMachineAlpha.BLAST_FURNACE.getItem(), true, false);
@@ -396,15 +373,7 @@ public class ModuleFactory extends RailcraftModule {
                         'B', EnumBrick.INFERNAL.get(BrickVariant.BRICK, 1),
                         'P', Items.magma_cream);
             }
-            if (EnumMachineAlpha.COKE_OVEN.isAvaliable() && EnumBrick.SANDY.getBlock() != null) {
-                ItemStack stack = EnumMachineAlpha.COKE_OVEN.getItem();
-                CraftingPlugin.addShapedRecipe(stack,
-                        " B ",
-                        " S ",
-                        " B ",
-                        'B', EnumBrick.SANDY.get(BrickVariant.BRICK, 1),
-                        'S', "sand");
-            }
+
         }
 
         if (EnumCube.COKE_BLOCK.isEnabled())

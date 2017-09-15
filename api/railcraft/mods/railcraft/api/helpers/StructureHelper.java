@@ -21,8 +21,6 @@ public interface StructureHelper {
 
     void placeBlastFurnace(World world, int x, int y, int z, ItemStack input, ItemStack output, ItemStack fuel);
 
-    void placeCokeOven(World world, int x, int y, int z, int creosote, ItemStack input, ItemStack output);
-
     void placeFluidBoiler(World world, int x, int y, int z, int width, int height, boolean highPressure, int water, FluidStack fuel);
 
     void placeIronTank(World world, int x, int y, int z, int patternIndex, FluidStack fluid);

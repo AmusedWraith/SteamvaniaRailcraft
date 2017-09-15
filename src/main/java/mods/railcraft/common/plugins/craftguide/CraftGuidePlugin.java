@@ -25,7 +25,6 @@ public class CraftGuidePlugin {
         if (Loader.isModLoaded("craftguide")) {
             try {
                 registerCraftGuideObject(new BlastFurnacePlugin());
-                registerCraftGuideObject(new CokeOvenPlugin());
                 registerCraftGuideObject(new RockCrusherPlugin());
                 registerCraftGuideObject(new RollingMachinePlugin());
                 registerCraftGuideObject(new CustomRecipesPlugin());

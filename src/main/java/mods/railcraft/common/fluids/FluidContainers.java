@@ -65,8 +65,7 @@ public class FluidContainers {
 
                 LootPlugin.addLootRailway(new ItemStack(item), 4, 16, "creosote.bottle");
 
-                if (!RailcraftConfig.useCreosoteFurnaceRecipes() && RailcraftConfig.isSubBlockEnabled(EnumMachineAlpha.COKE_OVEN.getTag()))
-                    FluidHelper.registerBottle(Fluids.CREOSOTE.get(FluidHelper.BUCKET_VOLUME), new ItemStack(item));
+               
 
                 itemCreosoteOilBottle = item;
             } else

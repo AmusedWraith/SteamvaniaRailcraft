@@ -43,7 +43,6 @@ public enum EnumMachineAlpha implements IEnumMachine {
     ADMIN_ANCHOR(Module.CHUNK_LOADING, "anchor.admin", TileAnchorAdmin.class, 3, 1, 0, 0, 1, 1, 1, 1, 2),
     SMOKER(Module.STRUCTURES, "smoker", TileSmoker.class, 3, 1, 0, 1, 2, 2, 2, 2),
     TRADE_STATION(Module.AUTOMATION, "trade.station", TileTradeStation.class, 3, 1, 0, 0, 1, 1, 2, 1),
-    COKE_OVEN(Module.FACTORY, "coke.oven", TileCokeOven.class, 3, 1, 0, 0, 0, 0, 1, 0, 1, 2),
     ROLLING_MACHINE(Module.FACTORY, "rolling.machine", TileRollingMachine.class, 3, 1, 0, 1, 2, 2, 2, 2),
     STEAM_TRAP_MANUAL(Module.EXTRAS, "steam.trap", TileSteamTrapManual.class, 3, 1, 0, 2, 1, 1, 1, 1, 0, 1, 2),
     STEAM_TRAP_AUTO(Module.EXTRAS, "steam.trap.auto", TileSteamTrapAuto.class, 4, 1, 0, 2, 1, 1, 1, 1, 0, 1, 2, 3),
@@ -62,7 +61,7 @@ public enum EnumMachineAlpha implements IEnumMachine {
     private ToolTip tip;
 
     static {
-        creativeList.add(COKE_OVEN);
+
         creativeList.add(BLAST_FURNACE);
         creativeList.add(STEAM_OVEN);
         creativeList.add(TANK_WATER);

@@ -311,7 +311,7 @@ public class ModuleCore extends RailcraftModule {
 
     @Override
     public void initSecond() {
-        if (RailcraftConfig.useCreosoteFurnaceRecipes() || !EnumMachineAlpha.COKE_OVEN.isAvaliable()) {
+        if (RailcraftConfig.useCreosoteFurnaceRecipes()) {
             FurnaceRecipes.smelting().func_151394_a(new ItemStack(Items.coal, 1, 0), FluidContainers.getCreosoteOilBottle(2), 0.0F);
             FurnaceRecipes.smelting().func_151394_a(new ItemStack(Items.coal, 1, 1), FluidContainers.getCreosoteOilBottle(1), 0.0F);
         }

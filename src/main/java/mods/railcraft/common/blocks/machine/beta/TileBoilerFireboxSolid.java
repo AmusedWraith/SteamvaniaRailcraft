@@ -19,7 +19,6 @@ import net.minecraft.item.ItemStack;
 import mods.railcraft.common.blocks.machine.IEnumMachine;
 import mods.railcraft.common.blocks.machine.MultiBlockPattern;
 import mods.railcraft.common.blocks.machine.TileMultiBlock;
-import mods.railcraft.common.blocks.machine.alpha.TileCokeOven;
 import mods.railcraft.common.blocks.machine.alpha.TileSteamOven;
 import mods.railcraft.common.gui.EnumGui;
 import mods.railcraft.common.gui.GuiHandler;
@@ -77,8 +76,6 @@ public class TileBoilerFireboxSolid extends TileBoilerFirebox implements INeedsF
         @Override
         public boolean matches(TileEntity tile) {
             if (tile instanceof TileSteamOven)
-                return true;
-            if (tile instanceof TileCokeOven)
                 return true;
             if (tile instanceof TileBoiler)
                 return false;
