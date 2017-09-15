@@ -81,7 +81,6 @@ public class MachineTileRegistery {
         GameRegistry.registerTileEntity(TileElectricFeederAdmin.class, "RCElectricFeederAdminTile");
         GameRegistry.registerTileEntity(TileAdminSteamProducer.class, "RCAdminSteamProducerTile");
         GameRegistry.registerTileEntity(TileFluxTransformer.class, "RCFluxTransformerTile");
-        GameRegistry.registerTileEntity(TileForceTrackEmitter.class, "RCForceTrackEmitterTile");
         GameRegistry.registerTileEntity(TileEngravingBench.class, "RCEngravingBenchTile");
 
     }

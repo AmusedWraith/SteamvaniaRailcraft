@@ -81,8 +81,8 @@ public enum EnumTrack {
     ELECTRIC(Module.TRACKS_ELECTRIC, 2, 0, "electric", 16, TrackElectric.class),
     ELECTRIC_JUNCTION(Module.TRACKS_ELECTRIC, 1, 0, "electric.junction", 8, TrackElectricJunction.class),
     ELECTRIC_SWITCH(Module.TRACKS_ELECTRIC, 4, 0, "electric.switch", 8, TrackElectricSwitch.class),
-    ELECTRIC_WYE(Module.TRACKS_ELECTRIC, 2, 0, "electric.wye", 8, TrackElectricWye.class),
-    FORCE(Module.ELECTRICITY, 1, 0, "force", 1, TrackForce.class);
+    ELECTRIC_WYE(Module.TRACKS_ELECTRIC, 2, 0, "electric.wye", 8, TrackElectricWye.class);
+
     public static final EnumTrack[] VALUES = values();
     private static final List<EnumTrack> creativeList = new ArrayList<EnumTrack>(50);
     private static final Set<TrackSpec> trackSpecs = new HashSet<TrackSpec>(50);

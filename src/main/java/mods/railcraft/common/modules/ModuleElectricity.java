@@ -63,16 +63,6 @@ public class ModuleElectricity extends RailcraftModule {
         epsilon = EnumMachineEpsilon.ELECTRIC_FEEDER_ADMIN;
         epsilon.register();
 
-        epsilon = EnumMachineEpsilon.FORCE_TRACK_EMITTER;
-        if (epsilon.register())
-            CraftingPlugin.addShapedRecipe(epsilon.getItem(),
-                    "PCP",
-                    "CDC",
-                    "PCP",
-                    'P', RailcraftItem.plate.getRecipeObject(EnumPlate.TIN),
-                    'D', "blockDiamond",
-                    'C', "ingotCopper");
-
         epsilon = EnumMachineEpsilon.FLUX_TRANSFORMER;
         if (epsilon.register())
             CraftingPlugin.addShapedRecipe(epsilon.getItem(2),
